@@ -2,23 +2,22 @@ package CretionalDP.FactoryDP;
 
 public class FactoryPatternDemo {
     public static void main(String[] args) {
-        Shape circle1=new Circle();
-        circle1.draw();
-        Shape square1 = new Square();
-        square1.draw();
-        Shape rectangle1 = new Rectangle();
-        rectangle1.draw();
-
-        System.out.println("*******");
-        System.out.println();
-        ShapeFactory shapeFactory=new ShapeFactory();
-        Shape shape1=shapeFactory.getShape("daire");
-        Shape shape2=shapeFactory.getShape("dikdörtgen");
-        Shape shape3=shapeFactory.getShape("kare");
+        Shape shape1=new Circle();
         shape1.draw();
+        Shape shape2=new Rectangle();
         shape2.draw();
+        Shape shape3=new Square();
         shape3.draw();
+
+        //*******************//
+        ShapeFactory shapeFactory=new ShapeFactory();
+        Shape shape4=shapeFactory.getShape("daire");
+        Shape shape5=shapeFactory.getShape("dikdörtgen");
+        Shape shape6=shapeFactory.getShape("kare");
+
+        shape4.draw();
+        shape5.draw();
+        shape6.draw();
+
     }
-
-
 }

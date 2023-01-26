@@ -6,14 +6,18 @@ public class ShapeFactory {
         if(shapeType==null){
             return null;
         }
-        if(shapeType.equalsIgnoreCase("daire")){
+        else if (shapeType.equalsIgnoreCase("daire")){
             return new Circle();
-        } else if (shapeType.equalsIgnoreCase("dikdörtgen")) {
+        }
+        else if(shapeType.equalsIgnoreCase("dikdörtgen")){
             return new Square();
         }
         else if(shapeType.equalsIgnoreCase("kare")){
             return new Rectangle();
         }
+
         return null;
     }
+
+
 }

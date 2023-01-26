@@ -11,6 +11,7 @@ public class SingletonObject {
     }
 
     public void changeMessage(){
-        this.message=this.message+"=hello";
+        this.message=this.message+" = Hello";
     }
+
 }
